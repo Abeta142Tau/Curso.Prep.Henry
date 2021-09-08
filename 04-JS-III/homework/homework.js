@@ -148,7 +148,7 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí
-  // D1, L2, M3, MI4, J5, V6, S7
+ 
   if(numeroDeDia === 1 || numeroDeDia === 7) {
     return 'Es fin de semana';
   }   
@@ -227,6 +227,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código: 
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else {
+      array.push(suma);
+    }
+  }
+  if(i < 10) {
+    return 'Se interrumpió la ejecución';
+  }
+  else {
+      return array;
+  }
 }
 
 
@@ -237,6 +252,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array = [];
+  var newnumber = numero;
+  for(i = 0; i < 10; i++) {
+    if(numero[i] === 5) continue; 
+    else {
+      newnumber = newnumber + 2;
+      
+      array.push(newnumber);
+    }
+  } 
+  return array;
 }
 
 
