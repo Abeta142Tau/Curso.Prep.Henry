@@ -210,7 +210,7 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código: 
   var cien = [];
-  for(i = 0; i = array.length; i++) {
+  for(i = 0; i < array.length; i++) {
     if(array[i] > 100) {
       cien.push(array[i]);
     }
@@ -229,7 +229,7 @@ function breakStatement(numero) {
   // Tu código: 
   var array = [];
   var suma = numero;
-  for(var i= 0; i<10; i++) {
+  for(var i= 0; i < 10; i++) {
     suma = suma + 2;
     if(suma === i) break;
     else {
@@ -255,13 +255,13 @@ function continueStatement(numero) {
   var array = [];
   var newnumber = numero;
   for(i = 0; i < 10; i++) {
-    if(numero[i] === 5) continue; 
+    if(i === 5) continue; 
     else {
       newnumber = newnumber + 2;
       
       array.push(newnumber);
     }
-  } 
+  }
   return array;
 }
 
